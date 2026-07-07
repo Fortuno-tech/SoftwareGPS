@@ -1,0 +1,16 @@
+[project]
+name = "ingestion-service"
+version = "0.1.0"
+description = "Microservice d'ingestion de données pour GPS et capteurs"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.23.0",
+    "pydantic>=2.7.0",
+    "sqlalchemy>=2.0.0",
+    "redis>=5.0.0",
+    "python-dotenv>=1.0.0"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
